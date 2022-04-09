@@ -1,0 +1,9 @@
+### Obtener token
+POST http://127.0.0.1:8000/api/sanctum/token HTTP/1.1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "josuecheco02@gmail.com",
+    "password": "12345678"
+}

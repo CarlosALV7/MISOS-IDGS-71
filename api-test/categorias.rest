@@ -1,0 +1,31 @@
+### Obtener categorías
+GET http://127.0.0.1:8000/api/categorias
+Accept: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+### Obtener una categoría
+GET http://127.0.0.1:8000/api/categorias/1
+Accept: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+### Crear una categoría
+POST http://127.0.0.1:8000/api/categorias
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+{
+    "categoria":"Categoría a través de API"
+    , "estatus":"activa"
+}
+
+### Editar una categoría
+PUT http://127.0.0.1:8000/api/categorias/7
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|DCkzDvP9XivWYZ0Se1832nLAtpQzPflWOq2qpCDp
+
+{
+    "categoria":"Categoría a través de API mod"
+    , "estatus":"inactiva"
+}

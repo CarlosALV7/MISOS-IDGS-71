@@ -1,0 +1,35 @@
+### Obtener citas
+GET http://127.0.0.1:8000/api/citas
+Accept: application/json
+Authorization: Bearer 1|bVDQE0Iqh8QbZBTxusAUmN5NVmprxoTqh3iJwyLe
+
+### Obtener un producto
+GET http://127.0.0.1:8000/api/citas/5
+Accept: application/json
+Authorization: Bearer 1|bVDQE0Iqh8QbZBTxusAUmN5NVmprxoTqh3iJwyLe
+
+### Crear un producto
+POST http://127.0.0.1:8000/api/citas
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|bVDQE0Iqh8QbZBTxusAUmN5NVmprxoTqh3iJwyLe
+
+{
+    "usuario_id":1
+    , "fecha":"2022-04-05"
+    , "descripcion":"Cita nueva creada a través de llamada a API"
+    , "estatus":"asistio"
+}
+
+### Editar un producto
+PUT http://127.0.0.1:8000/api/citas/3
+Accept: application/json
+Content-Type: application/json
+Authorization: Bearer 1|bVDQE0Iqh8QbZBTxusAUmN5NVmprxoTqh3iJwyLe
+
+{
+    "usuario_id":1
+    , "fecha":"2022-04-05"
+    , "descripcion":"Cita nueva creada a través de llamada a API"
+    , "estatus":"asistio"
+}

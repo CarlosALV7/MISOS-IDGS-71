@@ -21,11 +21,13 @@ use App\Models\User;
 Route::middleware('auth:sanctum')->group(function () {
     // Ejemplo:
     // Método GET: http://127.0.0.1:8000/api/categorias
-    Route::APIresource('categorias', CategoriasController::class)->names('api-categorias');
-    Route::APIresource('citas', CitasController::class)->names('api-citas');
-    Route::APIresource('productos', ProductosController::class)->names('api-productos');
+   
     // Route::APIresource('categorias', CategoriasController::class)->only(['index'])->name('index','api-categorias');
 });
+
+Route::APIresource('categorias', CategoriasController::class)->names('api-categorias');
+Route::APIresource('citas', CitasController::class)->names('api-citas');
+Route::APIresource('productos', ProductosController::class)->names('api-productos');
 
 Route::post('/tokens/create', function (Request $request) {
     $token = $request->user()->createToken($request->token_name);
